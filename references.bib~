@@ -151,3 +151,11 @@
   howpublished = {\url{http://agilemenifesto.org}},
   note         = {accessed: 2017-03-24}
 }
+
+@misc{poppendieckweb,
+  key          = {Poppendieck LLC},
+  author       = {Poppendieck, Tom and Poppendieck, Mary},
+  title        = {The Lean Mindset},
+  howpublished = {\url\http://www.poppendieck.com/people.html}},
+  note         = {accessed: 2017-03-24},
+}
