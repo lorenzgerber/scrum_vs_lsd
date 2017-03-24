@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt,twoside]{article}
+%\documentclass[a4paper,11pt,twoside,se]{article}
+
+\usepackage{UmUStudentReport}
+\usepackage{verbatim}   % Multi-line comments using \begin{comment}
+\usepackage{courier}    % Nicer fonts are used. (not necessary)
+\usepackage{pslatex}    % Also nicer fonts. (not necessary)
+\usepackage[pdftex]{graphicx}   % allows including pdf figures
+\usepackage{listings}
+\usepackage{pgf-umlcd}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{lmodern}   % Optional fonts. (not necessary)
+%\usepackage{tabularx}
+%\usepackage{microtype} % Provides some typographic improvements over default settings
+%\usepackage{placeins}  % For aligning images with \FloatBarrier
+%\usepackage{booktabs}  % For nice-looking tables
+%\usepackage{titlesec}  % More granular control of sections.
+
+% DOCUMENT INFO
+% =============
+\department{Department of Computing Science}
+\coursename{Software Engineering 15 p}
+\coursecode{5DV151}
+\title{OU 1 - Scrum and Lean Software Development}
+\author{Lorenz Gerber ({\tt{dv15lgr@cs.umu.se}} {\tt{lozger03@student.umu.se}})}
+\date{2017-03-24}
+%\revisiondate{2016-01-18}
+\instructor{Jonny Pettersson / Jonas Andersson}
+
+
+% DOCUMENT SETTINGS
+% =================
+\bibliographystyle{plain}
+%\bibliographystyle{ieee}
+\pagestyle{fancy}
+\raggedbottom
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+%\graphicspath{{images/}}   %Path for images
+
+\usepackage{float}
+\floatstyle{ruled}
+\newfloat{listing}{thp}{lop}
+\floatname{listing}{Listing}
+
+
+
+% DEFINES
+% =======
+%\newcommand{\mycommand}{<latex code>}
+
+% DOCUMENT
+% ========
+\begin{document}
+\lstset{language=C}
+\maketitle
+\thispagestyle{empty}
+\newpage
+%\tableofcontents
+%\thispagestyle{empty}
+%\newpage
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+This report has three aims: First to describe the two software processes models `Scrum' and `Lean Software Development' (LSD). Then to devise a number of critera that can be used to compare software process models and finally to compare `Scrum' and `LSD' according to these critera.
+
+\section{Description of the Models}
+\subsection{Scrum}
+Scrum as a software process model has been described in 1995 by Ken Schwaber and Jeff Sutherland in a OOPLSA (Object-Oriented Programming, Systems, Languages \& Applications) proceedings article \cite{oopsla1995}. It took inspiration from earlier work of two researchers active in product marketing strategies \cite{takeuchi1986}. According to the scrum guide, an official white paper of the method wwritten by it's inventors Schwaber and Sutherland, Scrum is based on empirical control theory \cite{scrumguide}. Scrum is today the probably most adopted agile project managment method in the software industry \cite[p. 86]{sommerville2016}.
+
+`Agile' methods are such that adopt the `Agile Manifesto' a declaration of values forwarded by a group of software evangelists that envisoned a more light-weight and flexible development process \cite{manifesto}. It is noteworthy that the fathers of `Scrum' are both co-authors on the `Manifesto' which was devised six years after their publication of Scrum.
+
+The following description of the scrum methodology takes reference to the Scrum guide \cite{scrumguide} where the practicle aspects are broken down into three parts: The Scrum Team (Product Owner, Development Team and Scrum Master), Scrum Events (The Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective) and Scrum Artifacts (Product Backlog, Sprint Backlog, Increment). The rest of the scrumguide describes mostly the philosophy behind the method.
+
+Scrum is centered around a small \textbf{development team} that works together on a product or feature. The development team  meets every morning for the \textit{Daily Scrum}, a short informal meeting where everybody tells to the other team members what he's at, what she plans to do during the workday, problems he encounterd and problems she solved. As an important aspect, it is often pointed out in litterature that the Scrum team should be collocated in the same office to allow continuous easy informal communication when needed. In the scrum guide, a scrum development team is suggested to have between three and nine members. One member of them is the \textbf{Scrum Master}. He should be experienced Scrum practioneer as his main duty besides being a normal team member is to coach and help applying the scrum theory. The scrum guide lists for the scrum master a number of other duties that go beyond pure scrum coaching. In traditional teams, the scrum master would probably be called the project manager but `Scrum' delibaretly chooses a different name to free people from preconceived ideas of how they used to work in projects managed in a traditional way.  
+The work of a development team is organized \textbf{incremental} and \textbf{iterativ}. The cycle of iterativ steps in scrum is called a \textbf{Sprint}. Within one sprint that usually lasts between two and four weeks, the development team works on a list of tasks the so called \textit{Sprint backlog}. These tasks are a subset of the \textbf{product backlog} which represent a list of product features, requirements or engineering improvements from the whole project. This list is worked out together with the \textit{Product Owner}. Ideally, this should be the customer itself or a representative of the customer that is collocated with Scrum Development Team.
+
+At the end of a sprint, the items finished from the Sprint backlog during the current Sprint represent the \textbf{increment} achieved. Each increment combined with the product so far should constitute a \textbf{potentially shippable product}.
+
+
+
+
+
+
+
+\subsection{Lean Software Development, LSD}
+Lean software development has been presented for a large crowd in a book written by the agile evangelists Poppendieck and Poppendieck \cite{poppendieck2003}. They took their inspiration from industry and car manufactering where lean production was already widely accepted, pioneered and developed by the Japanese car manufactuerer Toyota \cite{toyota}.
+
+\section{Evaluation Critera}
+
+\section{Compariosn Scrum vs LSD}
+
+
+
+\addcontentsline{toc}{section}{\refname}
+\bibliography{references}
+\end{document}
