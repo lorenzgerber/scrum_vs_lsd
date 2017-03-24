@@ -70,31 +70,98 @@
 This report has three aims: First to describe the two software processes models `Scrum' and `Lean Software Development' (LSD). Then to devise a number of critera that can be used to compare software process models and finally to compare `Scrum' and `LSD' according to these critera.
 
 \section{Description of the Models}
+Both Scrum and LSD are so called agile methodologies. `Agile' methods are such that adopt the `Agile Manifesto' a declaration of values forwarded by a group of software evangelists that envisoned a more light-weight and flexible development process \cite{manifesto}. It is noteworthy that the fathers of `Scrum' are both co-authors on the `Manifesto' which was devised six years after their publication of the Scrum whitepaper \cite{oopsla}. According to their homepage, the authors of the LSD whitepaper are both prominent agile evanglists themself \cite{poppendieckweb}. 
+
 \subsection{Scrum}
 Scrum as a software process model has been described in 1995 by Ken Schwaber and Jeff Sutherland in a OOPLSA (Object-Oriented Programming, Systems, Languages \& Applications) proceedings article \cite{oopsla1995}. It took inspiration from earlier work of two researchers active in product marketing strategies \cite{takeuchi1986}. According to the scrum guide, an official white paper of the method wwritten by it's inventors Schwaber and Sutherland, Scrum is based on empirical control theory \cite{scrumguide}. Scrum is today the probably most adopted agile project managment method in the software industry \cite[p. 86]{sommerville2016}.
 
-`Agile' methods are such that adopt the `Agile Manifesto' a declaration of values forwarded by a group of software evangelists that envisoned a more light-weight and flexible development process \cite{manifesto}. It is noteworthy that the fathers of `Scrum' are both co-authors on the `Manifesto' which was devised six years after their publication of Scrum.
+In reference to the \textit{Scrum Guide}, it follows a short description of the individual participants, the events and artifacts of the Scrum methodology \cite{scrumguide}.
+The scrum guide defines the \textbf{Scrum Team} to consist of three different gropus: First, there is the \textbf{Product Owner}. He could be the customer, a representative of the customer or simply somebody that knows best about the product to be developed in terms of requirements. In the scrum guide, it is said that the product owner should ideally be co-located with the rest of the Scrum Team. The \textit{Development Team} is a cross-functional group of developers consisting of between three and nine members. Obviously, the development team is the center of all productivity. Within the development team one member is the \textbf{Scrum Master}. He should be an experienced scrum practioneer as his main duty besides being a normal development team member is to coach and advise the rest of the team on `living' the scrum methodology.
 
-The following description of the scrum methodology takes reference to the Scrum guide \cite{scrumguide} where the practicle aspects are broken down into three parts: The Scrum Team (Product Owner, Development Team and Scrum Master), Scrum Events (The Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective) and Scrum Artifacts (Product Backlog, Sprint Backlog, Increment). The rest of the scrumguide describes mostly the philosophy behind the method.
+The scrum guide describes five events. These are the organisational main activities in which the members of a Scrum Team participate. All activities are centered around the \textbf{Sprint}. The sprint is a two to four month long cylce in which the main development work takes place. Ahead of a sprint is the \textbf{Sprint Planning}. As the name suggests, here the work preparation for the sprint is conducted. The whole scrum team including the product owner takes part here. A sprint planning for a one month lasting sprint shall not be longer than eight hours. The two main topics for a planning session are `what can be done during the next Sprint' and 'how will the work get done'.
+During the actual sprint period, informal work meetings, the \textit{Daily Scrum} are held every morning during a proposed fifteen minutes. Here only the development team and the scrum master take part. It has three main topics: `What was done yesterday', `what will be done today' and `are there any problems that prevent the team from reaching it's goal'.
 
-Scrum is centered around a small \textbf{development team} that works together on a product or feature. The development team  meets every morning for the \textit{Daily Scrum}, a short informal meeting where everybody tells to the other team members what he's at, what she plans to do during the workday, problems he encounterd and problems she solved. As an important aspect, it is often pointed out in litterature that the Scrum team should be collocated in the same office to allow continuous easy informal communication when needed. In the scrum guide, a scrum development team is suggested to have between three and nine members. One member of them is the \textbf{Scrum Master}. He should be experienced Scrum practioneer as his main duty besides being a normal team member is to coach and help applying the scrum theory. The scrum guide lists for the scrum master a number of other duties that go beyond pure scrum coaching. In traditional teams, the scrum master would probably be called the project manager but `Scrum' delibaretly chooses a different name to free people from preconceived ideas of how they used to work in projects managed in a traditional way.  
-The work of a development team is organized \textbf{incremental} and \textbf{iterativ}. The cycle of iterativ steps in scrum is called a \textbf{Sprint}. Within one sprint that usually lasts between two and four weeks, the development team works on a list of tasks the so called \textit{Sprint backlog}. These tasks are a subset of the \textbf{product backlog} which represent a list of product features, requirements or engineering improvements from the whole project. This list is worked out together with the \textit{Product Owner}. Ideally, this should be the customer itself or a representative of the customer that is collocated with Scrum Development Team.
+After a sprint, a \textbf{Sprint Review} is arranged where again analogous to the Sprint planning the whole Scrum Team including the stakeholders takes part. This evaluation is focused on the product developed but also on how the product relates to it's environmental parameters.
 
-At the end of a sprint, the items finished from the Sprint backlog during the current Sprint represent the \textbf{increment} achieved. Each increment combined with the product so far should constitute a \textbf{potentially shippable product}.
+Besides the sprint review, at the end of a sprint the \textbf{Sprint Retrospective} takes place. This meeting, in contrast to the sprint review focuses not on the actual product development but on the Development team itself. It shall help to work on improving the work process itself and is proposed to take not more than three hours. After the sprint retrospective, the next cycle starts again with a Sprint planning event.
 
-
-
-
+Besides the actors and events, there are a three artifacts specifc for the scrum methodology. The first is the \textbf{Product Backlog}. This is a list with product features, requirements and engineering improvements. It is maintained by the product owner. During the sprint planning event, tasks from the product backlog are chosen for the next sprint. All chosen tasks for one sprint cycle define the second artifact, the \textbf{Sprint Backlog}. After a sprint, the finished tasks from the sprint backlog plus the tasks finshed in earlier sprints together comprise the \textit{increment}: A potentially shippabable version of the product.  
 
 
 
 \subsection{Lean Software Development, LSD}
 Lean software development has been presented for a large crowd in a book written by the agile evangelists Poppendieck and Poppendieck \cite{poppendieck2003}. They took their inspiration from industry and car manufactering where lean production was already widely accepted, pioneered and developed by the Japanese car manufactuerer Toyota \cite{toyota}.
 
+The following description of LSD was mostly condesed from the introduction chapter of the whitepaper book defning Lean Software Development \cite{poppendieck2003}. First, the terms \textbf{Lean Principles} and \textit{Practices} are coined. Lean principles are today mostly known from the manufacturing industry. It is pointed out that principles should be seen as universal high-level guidelines. In LSD seven lean principles are devised, they will be further described below. The authors then describe that practices are the actual events which should embody and translate the high-level guidelines into action. However, according to them, it is not feasilble to transfer `best practices' from other fields to software development as practices are very dependen on the context. Hence, the authors suggest that Lean principles should be used to define and further refine agile practices which have already shown to be of use in software engineering. They further suggest that lean principles can be used as a theoretical framework to reason and explain why agile practices work.
+
+Below follow the seven Lean Principles from the book and a short account of how they are set to work in Software Engineering.
+
+\begin{enumerate}
+\item Eliminate Waste\\
+Anything that is not directly adding value to the product is seen as waste. In software development some sources of waste mentioned are `partially done work', `extra features' that are not requested, `task switching' or `waiting'. 
+
+\item Amplify learning\\
+The authors argue that learning is at the very heart of software development. They devise therefore several practices that shall improve and amplify the learning processes. Some of them are to generally increase feedback loops in the work processes another tool is iteration in planning and development processes. 
+
+\item Decide as late as possible\\
+This principle relates to keeping options along the development way to be able to adapt to changed external conditons. In software development, this can be translated into such practices as modular code, using clear defined interfaces and writing generic code. This allows to adapt to new conditions at later stages of a project.
+
+\item Deliver as fast as possible\\
+Here the authors argue, that the preconditions for fast delivery of a product, which obviously is a desired property, is to work on short iterative cylces. This is said to take pressure from developers as each task is small and manageable on the other side it allows for fine grained control and adaption throughout the process.
+
+\item Empower the team\\
+This chapter and principle is strongly based in scientifc studies about organisation theory. The punchline is that loosely managed teams in a rather flat hierarchy provide the most productive work unit.  
+
+\item Build integrity in\\
+This principle is about property of the developed product. They define \textit{perceived integrity} as \textit{...the totality of the product achieving a balance of function, usability, reliability and economy that delights the customer} and \textit{conceptual integrity} as the fact that the \textit{...systems central concepts work together as a smooth, cohesive whole.}. A lot of the practices devised to obtain these principles seem to stem from research in human computer interaction (HCI). Additional to practices from HCI, software engineering practices such as refactoring and testing are mentioned. 
+
+\item See the whole\\
+This chapter describes the princple of how the above production unit principles integrate into the whole which here is the company. The largest part of the chapter describes how differnt form of contracts fit into the lean agile production system. 
+
+\end{enumerate} 
+
 \section{Evaluation Critera}
+To compare the two agile methodologies `Scrum' and `Lean Software Development', some pre-evaluations have to be conducted that will allow to choose a suitable refernce of comparison. While writing the summaries of the two methodologies, it became obvious that the approaches of the two methodologies or frameworks are quite different. LSD is more of a theroetical framework with a number of examples who the high-level principles can be implemented as agile practices. The Scrum methodology on the other hand is a very concrete, practical set of instructions for how to perform and organize software development.
+Hence, the criteria to compare the two methods need to reflect this difference. Below follows a number of criteria that will be used to compare the two methodologies.
 
+\begin{itemize}
+\item As such, the first criteria has already been described and partly evaluated: On which \textbf{Level of Abstraction} does the methodology operates: Is it high-level theoretical framework, a collection of pure applied practices or somewhere in between.
+
+\item What is the main \textbf{center of focus} in the methodology. Does it relate mostly to tangible or intangible subjects. Tangible one would be the actual developer, or the group of developers while intangible subjects are abstract processes in general. 
+
+\item Does the framework describe how it \textbf{interfaces} with it's non-agile surrounding. As described in the course textbook about software engineering, one often weak point of agile methodologies is how they can be embedded in a non-agile environment \cite[p.91 ]{sommerville2016}. Does the respective framework provides solutions to this by default.
+
+\item What is the \textbf{organizational unit} the framework relates to. Does the framework relates to the whole company or is it applicable mostly to a single small production unit, the developer or development tteam.
+
+\item Which \textbf{agile practices} and development techniques does the methodology implements. 
+
+\item Does the methodology provides a \textbf{step-by-step implementation} description. How should a conventional working company transform to the agile 
+
+
+\end{itemize}
 \section{Compariosn Scrum vs LSD}
+Despite both Scrum and LSD being agile methodolgies, they seem to have a quite different scope. Put inplain english, Scrum seems to be like a handbook of how to actually work in an agile style. The white paper is short and gives only few hints to the theory behind. Lean Software Development on the other side chooses much more an academic way of explaning and trying to connect theory with practices. While the theories in LSD are clearly defined to stem from Lean Production and as such from the Toyota Production System, in Scrum, the back ground is much less clear and not much highlighted. There would most likely be more secondary litteratur describing the theoretical background of scrum but in the whitepapers it's absent which seems to be by purpose and is as such a clear statement.
 
+Scrum puts the agile principle \textit{Individuals and interactions over processes and tools} in the center while LSD is, probably due to it's history, to a large extent concerned with processes.
+
+Being almost a pure practical description, the scrum guide does not mention much about how a scrum team should interface with non a non agile surrounding. Here the LSD methodology gives more clues. Maybe also because this probably happens on a higher organisational level.
+
+Without having a real reference for the statement, it feels like 'Scrum' could be termed as a bottom up approach to implement agile operations while LSD feels more top-down. Also LSD seems in many ways be mostly concerned about justifying and explaining how and why agile methods work. As such, the LSD whitepaper feels more like a guide for managers, while the scrum guide and scrum whitepapers appear to be more of a practitioner's guide. 
+
+\begin{table}[]
+\centering
+\caption{Comparison of the two agile methodologies `Scrum' and `Lean Software Development'}
+\label{tab:compare}
+\begin{tabular}{lll}
+                            & Scrum                                                                                                                                                         & LSD                                                                                                                                                                                                                                 \\ \hline
+Level of Abstraction        & \begin{tabular}[c]{@{}l@{}}complete package\\ of practices, usually \\ presented with little\\  or no theoretical \\ justifications\end{tabular}              & \begin{tabular}[c]{@{}l@{}}selection of high-level \\ principles, many based \\ in well researched fields \\ with concrete examples \\ of practical tools to \\ obtain results\end{tabular}                                         \\ \hline
+Center of Focus             & \begin{tabular}[c]{@{}l@{}}focuses mostly on \\ the production team\end{tabular}                                                                              & \begin{tabular}[c]{@{}l@{}}focuses mostly on \\ processes, how they \\ can be optimised\end{tabular}                                                                                                                                \\ \hline
+Interfaces                  & \begin{tabular}[c]{@{}l@{}}does not explicitly \\ mention interface \\ or embedding \\ within larger \\ organisation\end{tabular}                             & \begin{tabular}[c]{@{}l@{}}coming from practical \\ production industry, \\ LSD provides several \\ clues of how to \\ implement agile practices \\ into a larger organisation\end{tabular}                                         \\ \hline
+Organizational Unit         & \begin{tabular}[c]{@{}l@{}}clear focus on the \\ development team\end{tabular}                                                                                & discusses more general                                                                                                                                                                                                              \\ \hline
+Agile Practices             & \begin{tabular}[c]{@{}l@{}}implements: user \\ stories, on-site \\ customer, small \\ releases, incremental \\ planning, collective \\ ownership\end{tabular} & \begin{tabular}[c]{@{}l@{}}most of the current agile \\ practices are mentioned \\ in the book as tools, \\ they are however not \\ choosen as a specific set, \\ rather as individual tools \\ for certain situations\end{tabular} \\ \hline
+Step-by-step Implementation & \begin{tabular}[c]{@{}l@{}}precise, easy to \\ understand practical \\ description of how to 'do' scrum\end{tabular}                                          & \begin{tabular}[c]{@{}l@{}}even the 'tools' description\\ in the LSD book are more\\ on a example basis, feels \\ like the methodology \\ remains close to principles\\ even for the proposed tools\end{tabular}                    \\ \hline
+\end{tabular}
+\end{table}
 
 
 \addcontentsline{toc}{section}{\refname}

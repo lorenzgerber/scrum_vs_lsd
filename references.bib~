@@ -95,7 +95,7 @@
 }
 
 @misc{scrumguide,
-  key          = {The Scrum Guie},
+  key          = {The Scrum Guide},
   year         = 2016,
   title        = {The Scrum Guide},
   howpublished = {\url{http://www.scrumguides.org/scrum_guide.html}},
@@ -107,7 +107,7 @@
   author    = {Poppendieck, Tom and Poppendieck, Mary},
   isbn      = 0321150783,
   year      = 2003,
-  publisher = {Addison_Wesley}
+  publisher = {Addison Wesley}
 }
 
 @article{oopsla1995,
@@ -126,4 +126,28 @@
   year    = 1986,
   publisher = {Harvard Business Publishing},
 }
-  
+
+@misc{toyota,
+  key          = {Toyota Production System},
+  year         = 2017,
+  title        = {The Origin of the Toyota Production System},
+  howpublished = {\url{http://www.toyota-global.com/company/vision_philosophy/toyota_production_system/origin_of_the_toyota_production_system.html}},
+  note         = {accessed: 2017-03-24}
+}
+
+@book{sommerville2016,
+  title     = {Software Engineering},
+  author    = {Sommerville, Ian},
+  isbn      = 1292096136,
+  year      = 2016,
+  publisher = {Pearson},
+  address   = {Essex, England}
+}
+
+@misc{manifesto,
+  key          = {Agile Manifesto},
+  year         = 2001,
+  title        = {Manifesto for Agile Software Development},
+  howpublished = {\url{http://agilemenifesto.org}},
+  note         = {accessed: 2017-03-24}
+}
